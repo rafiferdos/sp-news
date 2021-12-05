@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.nav-bg {
+    background-color: #c2ffc2;
+}
+body {
+    background-color: #f0fff0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item{
+    border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item:hover {
+    background-color: #e0f0ea;
+    transition: .3s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: #e0f0ea;
+    border-radius: 20px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #95adbe;
+    border-radius: 10px;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 7px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #1e202a;
+    outline: 1px solid #1e202a;
+    border-radius: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
   }
-}
+
+  .footer-bg {
+    background-color: #1e202a;
+    color: #f0fff0;
+    padding: 5px;
+  }
